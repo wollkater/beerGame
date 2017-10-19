@@ -1,3 +1,5 @@
+package entitiy;
+
 /**
  * Created by marcel on 12.10.17.
  */
