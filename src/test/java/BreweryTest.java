@@ -1,12 +1,14 @@
+import org.junit.Before;
+import org.junit.Test;
+
 import java.util.HashMap;
-import org.junit.*;
 
 import static org.junit.Assert.assertEquals;
 
 /**
  * Created by marcel on 12.10.17.
  */
-class BreweryTest {
+public class BreweryTest {
 	Brewery brewery = new Brewery();
 	Storage storage = new Storage();
 	Resource beer5 = new Resource(ResourceType.BEER, 5);
@@ -14,7 +16,7 @@ class BreweryTest {
 	Resource hop5 = new Resource(ResourceType.HOPS, 5);
 
 	@Before
-	void setUp() {
+	public void setUp() {
 		brewery.setLager(storage);
 		HashMap<Resource, Integer> resources = new HashMap<>();
 		resources.put(beer5, 5);
@@ -24,10 +26,10 @@ class BreweryTest {
 	}
 
 	@Test
-	void brew() {
+	public void brew() {
 		brewery.brew();
 
-		assertEquals((Integer)6, brewery.getLager().getResources().get(beer5));
+		assertEquals((Integer) 6, brewery.getLager().getResources().get(beer5));
 	}
 
 }
