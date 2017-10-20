@@ -1,13 +1,18 @@
 import org.junit.Before;
 import org.junit.Test;
 
+
 import java.util.HashMap;
 
-import static org.junit.Assert.assertEquals;
+import entitiy.Brewery;
+import entitiy.Resource;
+import entitiy.ResourceType;
+import entitiy.Storage;
 
 /**
- * Created by marcel on 12.10.17.
+ * Created by marcel on 13.10.17.
  */
+
 public class BreweryTest {
 	Brewery brewery = new Brewery();
 	Storage storage = new Storage();
@@ -23,13 +28,17 @@ public class BreweryTest {
 		resources.put(water5, 5);
 		resources.put(hop5, 5);
 		storage.setResources(resources);
+
 	}
+
 
 	@Test
 	public void brew() {
 		brewery.brew();
 
 		assertEquals((Integer) 6, brewery.getLager().getResources().get(beer5));
+
 	}
 
 }
+

@@ -1,3 +1,5 @@
+package entitiy;
+
 import java.util.HashMap;
 
 /**
