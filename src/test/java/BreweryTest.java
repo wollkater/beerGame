@@ -1,13 +1,14 @@
 import org.junit.Before;
 import org.junit.Test;
 
-
 import java.util.HashMap;
 
 import entitiy.Brewery;
 import entitiy.Resource;
 import entitiy.ResourceType;
 import entitiy.Storage;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by marcel on 13.10.17.
