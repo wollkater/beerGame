@@ -7,24 +7,22 @@ import entitiy.Offer;
 /**
  * Created by marcel on 19.10.17.
  */
-public class OfferDao implements DaoInterface<Offer> {
-	@Override
-	public Offer findOne(int id) {
+public class OfferDao {
+
+	public static Offer findOne(int id) {
 		return null;
 	}
 
-	@Override
-	public Offer save(Offer entity) {
+	public static Offer save(Offer entity) {
 		return null;
 	}
 
-	@Override
-	public void delete(Offer entity) {
+	public static void delete(Offer entity) {
 
 	}
 
-	@Override
-	public List<Offer> getAll() {
+	public static List<Offer> getAll() {
 		return null;
 	}
+
 }
